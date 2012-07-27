@@ -1,6 +1,6 @@
 package Unixish;
 
-our $VERSION = '1.0.1'; # VERSION
+our $VERSION = '1.0.2'; # VERSION
 
 1;
 # ABSTRACT: Data transformation framework, inspired by Unix toolbox philosophy
@@ -14,7 +14,7 @@ Unixish - Data transformation framework, inspired by Unix toolbox philosophy
 
 =head1 VERSION
 
-version 1.0.1
+version 1.0.2
 
 =head1 AUTHOR
 
