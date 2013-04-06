@@ -17,13 +17,13 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Unixish",
-  "dist_version" => "1.0.2",
+  "dist_version" => "1.0.3",
   "license" => "perl",
   "module_name" => "Unixish",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Rinci" => "1.1.0"
+    "Rinci" => "v1.1.0"
   },
   "script_files" => []
 );
