@@ -3,7 +3,7 @@ NAME
     philosophy
 
 VERSION
-    version 1.0.3
+    version 1.0.4
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
@@ -15,8 +15,6 @@ COPYRIGHT AND LICENSE
     the same terms as the Perl 5 programming language system itself.
 
 DESCRIPTION
-    This module has Rinci metadata.
-
 FUNCTIONS
     None are exported by default, but they are exportable.
 

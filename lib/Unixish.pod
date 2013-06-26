@@ -9,13 +9,15 @@ package Unixish; # just to make PodWeaver happy
 __END__
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 Unixish - Data transformation framework, inspired by Unix toolbox philosophy
 
 =head1 VERSION
 
-version 1.0.3
+version 1.0.4
 
 =head1 SPECIFICATION VERSION
 
@@ -48,8 +50,8 @@ In Unixish, programs translate to functions. Unixish is essentially a set of
 guidelines and tools on how to write such functions.
 
 The goal of the framework is to let users easily create functions that can be
-used as normal Perl functions operating on arrays, as well as functions that can
-become Unix command-line utilities.
+used as normal Perl functions operating on arrays and streams (filehandles), as
+well as functions that can become Unix command-line utilities.
 
 =head1 GLOSSARY
 
@@ -122,13 +124,13 @@ Standard format for error message will be specified in the future.
 
 For example, the B<date> dux function accepts either an integer (assumed as Unix
 timestamp) or a L<DateTime> object. Other values like undef, an empty string, or
-other kinds of supported objects should not be processed and just passed to the
-output stream unprocessed. A warning can be logged if needed.
+other kinds of unsupported objects should not be processed and just passed to
+the output stream unprocessed. A warning can be logged if needed.
 
 =back
 
-A well-written dux function can be transformed into a usual Unix command-line
-utility.
+A well-written dux function can be readily transformed into a usual Unix
+command-line utility.
 
 =head1 NAMESPACE ORGANIZATION
 
@@ -144,8 +146,7 @@ contains the Data::Unixish::date::date function.
 A further subpackaging is allowed, for example:
 B<Data::Unixish::English::count_syllables>.
 
-L<Data::Unixish::CmdLine> is a utility to access dux functions from command
-line.
+L<App::dux> is a utility to access dux functions via the command-line.
 
 =head1 SEE ALSO
 
@@ -155,9 +156,9 @@ L<Log::Any>.
 
 =head2 Similar projects on CPAN
 
-=over 4
+=over
 
-=item * L<Text::Pipe> (active: 2007 - now)
+=item * L<Text::Pipe> (2007-now)
 
 Similarly inspired by Unix pipes, OO. I didn't find this project before I
 started Unixish.
@@ -165,6 +166,13 @@ started Unixish.
 Some of the differences: Text::Pipe is, as the name suggests, more
 text-oriented. It was created to unify text/template processing. Unixish on the
 other hand focuses on functions that can accept streams/arrays.
+
+=item * B<Perl Power Tools> (1999-now)
+
+(Search for C<ppt> in CPAN).
+
+Actually not quite the same thing, but the end result is roughly the same for
+many text-oriented Unix utilities (like B<wc>, B<sum>, B<head>, B<tail>, etc).
 
 =back
 

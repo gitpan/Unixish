@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Unixish",
-  "dist_version" => "1.0.3",
+  "dist_version" => "1.0.4",
   "license" => "perl",
   "module_name" => "Unixish",
   "recommends" => {},

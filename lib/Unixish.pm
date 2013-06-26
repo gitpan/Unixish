@@ -1,6 +1,6 @@
 package Unixish;
 
-our $VERSION = '1.0.3'; # VERSION
+our $VERSION = '1.0.4'; # VERSION
 
 1;
 # ABSTRACT: Data transformation framework, inspired by Unix toolbox philosophy
@@ -8,13 +8,15 @@ our $VERSION = '1.0.3'; # VERSION
 __END__
 =pod
 
+=encoding utf-8
+
 =head1 NAME
 
 Unixish - Data transformation framework, inspired by Unix toolbox philosophy
 
 =head1 VERSION
 
-version 1.0.3
+version 1.0.4
 
 =head1 AUTHOR
 
@@ -28,9 +30,6 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =head1 DESCRIPTION
-
-
-This module has L<Rinci> metadata.
 
 =head1 FUNCTIONS
 
